@@ -1,0 +1,47 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 95%;
+    max-width: 68rem;
+    margin: 0 auto;
+}
+#header{
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+}
+#header .container{
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1;
+    grid-template-areas: "logo navmenu"
+}
+#header .container .logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav.menu{
+    grid-area: navmenu;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo a img{
+    min-width: 5rem;
+    max-width: 5rem;
+}
+nav.menu ul li{
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+nav.menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
