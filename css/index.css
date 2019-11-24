@@ -10,12 +10,21 @@ h1{
     font-weight: 600;
     line-height: 5rem;
 }
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
 h5{
     margin-bottom: 0;
 }
 p{
     font-size: 1.25rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+}
+a,
+a:hover{
+    text-decoration: none;
 }
 .content-center{
     max-width: 50rem;
@@ -101,6 +110,46 @@ nav.menu ul li a{
 /* hero end*/
 
 /* portfolio start*/
+#portfolio .container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2;
+    grid-template-rows: auto;
+    grid-template-areas: "box1 box2"
+    "box3 box4"
+}
+.portafolio-container{
+    position: relative;
+    overflow: hidden;
+    border-radius: .125rem;
+    height: 30rem;
+}
+.portafolio-details{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1.5625rem;
+    z-index: 9000;
+}
+.portafolio-details a h2,
+.portafolio-details a p{
+    color: #fff;
+    margin: 0;
+}
+.portafolio-container img{
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    height: 30rem;
+}
+.portafolio-container:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.portafolio-container.box1{ grid-area: box1;}
+.portafolio-container.box2{ grid-area: box2;}
+.portafolio-container.box3{ grid-area: box3;}
+.portafolio-container.box4{ grid-area: box4;}
 /* portfolio end*/
 
 /* aboutus start*/
