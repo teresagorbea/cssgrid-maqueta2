@@ -1,0 +1,124 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 5rem;
+}
+h5{
+    margin-bottom: 0;
+}
+p{
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+.content-center{
+    max-width: 50rem;
+    margin: 0 auto 3.75rem auto;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+.top-margin-xs{
+    margin-top: 1rem;
+}
+.top-margin-sm{
+    margin-top: 2rem;
+}
+.top-margin-lg{
+    margin-top: 3rem;
+}
+.text-dark{ color: #000;}
+section{
+    padding: 3rem 0;
+}
+.full-width{
+    width: 100%;
+}
+
+.contenido{
+    width: 100%;
+}
+
+/* header start*/
+#header{
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+}
+#header .container{
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1;
+    grid-template-areas: "logo navmenu"
+}
+#header .container .logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav.menu{
+    grid-area: navmenu;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo a img{
+    min-width: 5rem;
+    max-width: 5rem;
+}
+nav.menu ul li{
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+nav.menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+/* header end*/
+
+/* hero start*/
+#hero{
+    background-image: url('../img/img_snow_wide.jpg');
+    background-size: cover;
+    padding-top: 5.625rem;
+    color: #fff;
+    min-height: 25rem;
+    grid-area: hero;
+}
+#hero a i{
+    margin-left: 1rem;
+}
+/* hero end*/
+
+/* portfolio start*/
+/* portfolio end*/
+
+/* aboutus start*/
+/* aboutus end*/
+
+/* pricing start*/
+/* pricing end*/
+
+/* testimonials start*/
+/* testimonials end*/
+
+/* contact start*/
+/* contact end*/
+
+/* media query start*/
+@media (max-width: 1199.98px) {  }
+@media (max-width: 991.98px) {  }
+@media (max-width: 767.98px) {  }
+@media (max-width: 575.98px) {  }
+
+/* media query end*/
