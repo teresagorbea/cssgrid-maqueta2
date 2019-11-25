@@ -153,6 +153,49 @@ nav.menu ul li a{
 /* portfolio end*/
 
 /* aboutus start*/
+#aboutus .container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "member1 member2 member3"
+}
+.member-container{
+    position: relative;
+    margin: 0.625rem 0;
+}
+.member-container.member1{ grid-area: member1;}
+.member-container.member2{ grid-area: member2;}
+.member-container.member3{ grid-area: member3;}
+
+.member-container img{
+    max-width: 100%;
+}
+.member-details{
+    position: absolute;
+    color: #606060;
+    bottom: 2rem;
+    left: 1.25rem;
+}
+.member-details span{
+    font-size: 1rem;
+}
+.member-details i{
+    padding: 0 0.5rem;
+}
+.member-details a i{
+    font-size: 1.875rem;
+    color: #606060;
+}
+#aboutus h5{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.member-details ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: .5rem;
+}
 /* aboutus end*/
 
 /* pricing start*/
