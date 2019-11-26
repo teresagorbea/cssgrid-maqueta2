@@ -5,6 +5,9 @@ body{
     margin: 0;
     padding: 0;
 }
+h1, h2, h3, h4, h5{
+    font-family: 'Titillium Web', sans-serif;
+}
 h1{
     font-size: 4rem;
     font-weight: 600;
@@ -12,6 +15,11 @@ h1{
 }
 h2{
     font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+h3{
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -37,7 +45,7 @@ a:hover{
 }
 .container{
     width: 90%;
-    max-width: 70rem;
+    max-width: 75rem;
     margin: 0 auto;
 }
 .top-margin-xs{
@@ -292,6 +300,40 @@ nav.menu ul li a{
 /* testimonials end*/
 
 /* contact start*/
+#contact .container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "box1 box2"
+}
+#contact .box1{ grid-area: box1;}
+#contact .box2{ grid-area: box2;}
+#contact form{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2;
+    grid-template-rows: auto;
+    grid-template-areas: "nombre apellido"
+    "correo correo"
+    "empresa empresa"
+    "telefono telefono";
+}
+form .nombre{ grid-area: nombre;}
+form .apellido{ grid-area: apellido;}
+form .correo{ grid-area: correo;}
+form .empresa{ grid-area: empresa;}
+form .telefono{ grid-area: telefono;}
+
+form input{
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
 /* contact end*/
 
 /* media query start*/
