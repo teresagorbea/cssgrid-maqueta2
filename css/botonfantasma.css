@@ -59,12 +59,13 @@
 /* black */
 .btn-ghost.secondary.black{
     color: var(--black);
-    background-color: transparent;
+    background-color: var(--white);
     border-color: var(--black);
 }
 .btn-ghost.secondary.black:hover{
     background-color: var(--black);
     color: var(--white);
+    border-color: var(--white);
 }
 .btn-ghost.secondary.black:active{
     box-shadow: inset 0 0 20px var(--white);
