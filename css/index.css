@@ -244,6 +244,51 @@ nav.menu ul li a{
 /* pricing end*/
 
 /* testimonials start*/
+.carousel{
+    min-height: 15rem;
+    padding: 2.5rem;
+    border-radius: 2px;
+    text-align: center;
+}
+.carousel p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+}
+.rating ul li{
+    display: inline-block;
+    list-style: none;
+}
+.rating i{
+    color: gold;
+    font-size: 1.6rem;
+}
+.testimonial-user{
+    max-width: 15rem;
+    margin: 0 auto;
+    text-align: left;
+}
+.testimonial-user h6{
+    margin-bottom: 0;
+}
+.testimonial-user span{
+    font-size: 1rem;
+}
+.testimonial-user img{
+    border-radius: 3.125rem;
+    max-width: 3.125rem;
+    text-align: center;
+}
+.testimonial-user .contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: "avatar details"
+}
+.user-avatar{ grid-area: avatar;}
+.user-details{ grid-area: details;}
+
 /* testimonials end*/
 
 /* contact start*/

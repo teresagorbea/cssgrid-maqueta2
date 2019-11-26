@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/botonfantasma.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
+<style>
+        .mySlides {display:none;}
+</style>
 <body>
     <header id="header">
         <div class="container">
@@ -163,6 +167,118 @@
             </div>
 
         </section>
+        <section id="testimonials">
+            <div class="content-center top-margin-sm">
+                    <h2>A few words from <b>our clients</b></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur adipisci veniam deleniti dolore aut voluptatem reprehenderit temporibus consequatur nostrum asperiores.</p>    
+            </div>
+            <div class="container">
+                    <div class="w3-content w3-display-container">
+                          
+                          <div class="w3-display-container mySlides carousel">
+                            <div class="w3-display-middle w3-container">
+                                <p>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, veritatis!</p>
+                                <div class="rating">
+                                    <ul>
+                                        <li><i class="icon ion-md-star"></i></li>
+                                        <li><i class="icon ion-md-star"></i></li>
+                                        <li><i class="icon ion-md-star"></i></li>
+                                        <li><i class="icon ion-md-star"></i></li>
+                                        <li><i class="icon ion-md-star"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="testimonial-user">
+                                    <div class="contenedor">
+                                        <div class="user-avatar">
+                                            <img src="img/business_woman_png_196557.jpg" alt="testimonio1">
+                                        </div>
+                                        <div class="user-details">
+                                            <h6>Karla Montes</h6>
+                                            <span>Jefe Ejecutivo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                       
+                            </div>
+                          </div>
+                          <div class="w3-display-container mySlides carousel">
+                                <div class="w3-display-middle w3-container">
+                                    <p>2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, veritatis!</p>
+                                    <div class="rating">
+                                        <ul>
+                                            <li><i class="icon ion-md-star"></i></li>
+                                            <li><i class="icon ion-md-star"></i></li>
+                                            <li><i class="icon ion-md-star"></i></li>
+                                            <li><i class="icon ion-md-star"></i></li>
+                                            <li><i class="icon ion-md-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="testimonial-user">
+                                        <div class="contenedor">
+                                            <div class="user-avatar">
+                                                <img src="img/business_woman_png_196557.jpg" alt="testimonio1">
+                                            </div>
+                                            <div class="user-details">
+                                                <h6>Karla Montes</h6>
+                                                <span>Jefe Ejecutivo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                           
+                                </div>
+                              </div>
+                              <div class="w3-display-container mySlides carousel">
+                                    <div class="w3-display-middle w3-container">
+                                        <p>3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, veritatis!</p>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><i class="icon ion-md-star"></i></li>
+                                                <li><i class="icon ion-md-star"></i></li>
+                                                <li><i class="icon ion-md-star"></i></li>
+                                                <li><i class="icon ion-md-star"></i></li>
+                                                <li><i class="icon ion-md-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="testimonial-user">
+                                            <div class="contenedor">
+                                                <div class="user-avatar">
+                                                    <img src="img/business_woman_png_196557.jpg" alt="testimonio1">
+                                                </div>
+                                                <div class="user-details">
+                                                    <h6>Karla Montes</h6>
+                                                    <span>Jefe Ejecutivo</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                               
+                                    </div>
+                                  </div>
+                          
+                          <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)"><i class="icon ion-md-arrow-back"></i></button>
+                          <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)"><i class="icon ion-md-arrow-forward"></i></button>
+                          
+                    </div>
+            </div>
+        </section>
 
+        <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+        </script>
 </body>
 </html>
