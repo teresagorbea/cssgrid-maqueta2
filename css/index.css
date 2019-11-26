@@ -1,5 +1,8 @@
 body{
     font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 *{
     margin: 0;
@@ -33,6 +36,10 @@ h5{
 p{
     font-size: 1.25rem;
     margin: 0.5rem 0;
+}
+small{
+    font-size: 80%;
+    font-weight: 400;
 }
 a,
 a:hover{
@@ -93,7 +100,8 @@ nav.menu{
     justify-content: flex-end;
     align-items: center;
 }
-.logo a img{
+.logo a img,
+footer img{
     min-width: 5rem;
     max-width: 5rem;
 }
@@ -337,6 +345,35 @@ form input{
     border-radius: .25rem;
 }
 /* contact end*/
+
+/*footer start*/
+#footer{
+    padding: 5rem 0;
+    text-align: center;
+    color: #fff;
+    background-color: #343a40;
+}
+#footer a{
+    color: #fff;
+}
+#footer a:hover{
+    color: #fff;
+}
+#footer ul{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+#footer ul li{
+    padding: 10px 15px;
+    display: inline-block;
+    margin-right: .5rem;
+}
+#footer ul li i{
+    font-size: 1.6rem;
+    color: #fff;
+}
+/*footer end*/
 
 /* media query start*/
 @media (max-width: 1199.98px) {  }
