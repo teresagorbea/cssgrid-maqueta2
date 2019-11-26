@@ -311,19 +311,21 @@ nav.menu ul li a{
 #contact .box2{ grid-area: box2;}
 #contact form{
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 15px;
     grid-template-columns: 2;
     grid-template-rows: auto;
     grid-template-areas: "nombre apellido"
     "correo correo"
     "empresa empresa"
-    "telefono telefono";
+    "telefono telefono"
+    "boton boton";
 }
 form .nombre{ grid-area: nombre;}
 form .apellido{ grid-area: apellido;}
 form .correo{ grid-area: correo;}
 form .empresa{ grid-area: empresa;}
 form .telefono{ grid-area: telefono;}
+form a{ grid-area: boton;}
 
 form input{
     width: 100%;
