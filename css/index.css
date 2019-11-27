@@ -86,7 +86,7 @@ section{
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 1;
-    grid-template-areas: "logo navmenu"
+    grid-template-areas: "logo navmenu";
 }
 #header .container .logo{
     grid-area: logo;
@@ -136,7 +136,7 @@ nav.menu ul li a{
     grid-template-columns: 2;
     grid-template-rows: auto;
     grid-template-areas: "box1 box2"
-    "box3 box4"
+    "box3 box4";
 }
 .portafolio-container{
     position: relative;
@@ -178,7 +178,7 @@ nav.menu ul li a{
     grid-gap: 20px;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "member1 member2 member3"
+    grid-template-areas: "member1 member2 member3";
 }
 .member-container{
     position: relative;
@@ -224,7 +224,7 @@ nav.menu ul li a{
     grid-gap: 20px;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    grid-template-areas: "light dark"
+    grid-template-areas: "light dark";
 }
 .pricing-container{
     margin: 1rem 0;
@@ -300,7 +300,7 @@ nav.menu ul li a{
     grid-gap: 20px;
     grid-template-columns: 20% 80%;
     grid-template-rows: auto;
-    grid-template-areas: "avatar details"
+    grid-template-areas: "avatar details";
 }
 .user-avatar{ grid-area: avatar;}
 .user-details{ grid-area: details;}
@@ -377,8 +377,70 @@ form input{
 
 /* media query start*/
 @media (max-width: 1199.98px) {  }
-@media (max-width: 991.98px) {  }
-@media (max-width: 767.98px) {  }
+@media (max-width: 991.98px) { 
+    .pricing-container .plans{
+        padding: 2rem 3rem;
+    }
+    section{
+        padding: 1.5rem 0;
+    }
+ }
+@media (max-width: 767.98px) { 
+    #portfolio .container{
+        grid-template-areas: "box1 box1"
+        "box2 box2"
+        "box3 box3"
+        "box4 box4";
+    }
+    #aboutus .container{
+        grid-template-areas: "member1"
+        "member2"
+        "member3";
+    }
+    #pricing .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 2;
+        grid-template-areas: "light"
+        "dark";
+    }
+    #contact .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 2;
+        grid-template-areas: "box1"
+        "box2";
+    }
+    h1{ font-size: 2.5rem;
+        line-height: 1.5;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    section{
+        padding: 1.5rem 0;
+    }
+    .content-center{
+        padding: 1rem;
+        margin: 0 auto 2rem auto;
+    }
+    .pricing-container .plans{
+        padding: 2rem 3rem;
+    }
+    .pricing-container{
+        margin: 0.25rem 0;
+    }
+    .carousel p{
+        font-size: 1rem;
+    }
+ }
 @media (max-width: 575.98px) {  }
 
 /* media query end*/
